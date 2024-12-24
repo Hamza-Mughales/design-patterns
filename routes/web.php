@@ -52,4 +52,13 @@ Route::get('/generateReport-template-method-pattern', [
     'generateReport'
 ]);
 
- 
+/**
+ * The Strategy Pattern is a behavioral design pattern that defines a family of algorithms,
+ *  encapsulates each one in a separate class, and allows them to be interchangeable at runtime.
+ *  This pattern promotes open/closed principle by letting you add new strategies 
+ * without modifying existing code.
+ */
+Route::get('/payment/{gateway}/{amount}/strategy-pattern', [
+    App\Http\Controllers\StrategyPattern\PaymentController::class, 
+    'makePayment'
+]);
