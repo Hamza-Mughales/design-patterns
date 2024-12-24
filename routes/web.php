@@ -38,3 +38,18 @@ Route::get('/makePayment-strategy-and-adapter-patterns', [
     App\Http\Controllers\StrategyAndAdapterTogether\PaymentController::class, 
     'makePayment'
 ]);
+
+/**
+ * The Template Method Design Pattern is a behavioral design pattern that 
+ * defines the skeleton of an algorithm in a base class (template) but 
+ * allows subclasses to override specific steps of the algorithm without changing its structure.
+ * 
+ * In Laravel, the Template Method Pattern can be useful when you want to enforce a 
+ * specific workflow or process while allowing flexibility in some parts of the implementation.
+ */
+Route::get('/generateReport-template-method-pattern', [
+    App\Http\Controllers\TemplateMethodPattern\GenerateReportController::class, 
+    'generateReport'
+]);
+
+ 
