@@ -29,3 +29,12 @@ Route::get('/makePayment-adapter-pattern', [
     App\Http\Controllers\AdapterPattern\PaymentController::class, 
     'makePayment'
 ]);
+
+/** Strategy with adapter patterns together
+ * You need to support third-party APIs and want a flexible way 
+ * to switch between payment gateways in your system.
+ */
+Route::get('/makePayment-strategy-and-adapter-patterns', [
+    App\Http\Controllers\StrategyAndAdapterTogether\PaymentController::class, 
+    'makePayment'
+]);
