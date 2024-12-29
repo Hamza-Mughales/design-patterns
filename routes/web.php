@@ -3,10 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 /**
- * A design pattern is a common solution to a common problem. Nothing more, nothing less. 
- * And, while some of these approaches might seem foreign or overwhelming to you, 
- * the important thing to remember is that, as a developer, you are in charge. 
- * That means you decide when a pattern is appropriate, and when it's completely unnecessary. 
+ * A design pattern is a common solution to a common problem. Nothing more, nothing less.
+ * And, while some of these approaches might seem foreign or overwhelming to you,
+ * the important thing to remember is that, as a developer, you are in charge.
+ * That means you decide when a pattern is appropriate, and when it's completely unnecessary.
  * That's the key.
  */
 
@@ -69,4 +69,15 @@ Route::get('/makePayment-strategy-and-adapter-patterns', [
 Route::get('/generateReport-template-method-pattern', [
     App\Http\Controllers\TemplateMethodPattern\GenerateReportController::class,
     'generateReport',
+]);
+
+/**
+ * The Observer Design Pattern is a behavioral design pattern where an object (called the subject)
+ *  maintains a list of its dependents (called observers) and notifies them of any state changes.
+ * This is useful for implementing event-driven systems, where multiple parts of your application
+ * need to respond to specific changes or events.
+ */
+Route::get('/WeatherStation-observer-pattern', [
+    App\Http\Controllers\ObserverPattern\ObserverPatternController::class
+    , 'index',
 ]);
