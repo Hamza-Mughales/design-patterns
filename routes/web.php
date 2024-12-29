@@ -81,3 +81,13 @@ Route::get('/WeatherStation-observer-pattern', [
     App\Http\Controllers\ObserverPattern\ObserverPatternController::class
     , 'index',
 ]);
+
+/**
+ * Factory Pattern
+ * This pattern is often used in scenarios where you need to create objects dynamically 
+ * based on input, without specifying their exact class in advance.
+ */
+Route::get('/uploadFile-observer-pattern', [
+    App\Http\Controllers\FactoryPattern\FileUploadController::class
+    , 'uploadFile',
+]);
